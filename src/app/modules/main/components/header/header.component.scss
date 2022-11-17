@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__user {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}

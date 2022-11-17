@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.login {
+  width: 320px;
+  padding: 1.5rem;
+
+  &__link {
+    display: inline-flex;
+    margin-top: 1rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+::ng-deep {
+  .login {
+    .mat-form-field {
+      display: block;
+    }
+  }
+}

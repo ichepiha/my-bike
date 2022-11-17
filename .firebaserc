@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "my-bike-ic": {
+      "hosting": {
+        "my-bike": [
+          "my-bike-ic"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "my-bike-ic"
+  }
+}

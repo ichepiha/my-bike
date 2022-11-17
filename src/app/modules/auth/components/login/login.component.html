@@ -1,0 +1,18 @@
+<div class="login mat-elevation-z8">
+  <h1 class="login__title">Ласкаво просимо!</h1>
+  <div *ngIf="loginForm" class="login__form">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <mat-error *ngIf="error">{{error}}</mat-error>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Введіть Ваш email" type="email" formControlName="email">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Пароль</mat-label>
+        <input matInput placeholder="Введіть Ваш пароль" type="password" formControlName="password">
+      </mat-form-field>
+      <button [disabled]="loginForm.invalid" mat-raised-button color="primary" type="submit">Увійти</button>
+    </form>
+    <a class="login__link" [routerLink]="['/signup']">Створити акаунт</a>
+  </div>
+</div>

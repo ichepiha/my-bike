@@ -1,0 +1,17 @@
+<div class="signup mat-elevation-z8">
+  <h1 class="signup__title">Створення нового акаунта</h1>
+  <div *ngIf="signupForm" class="signup__form">
+    <form [formGroup]="signupForm" (ngSubmit)="createUser()">
+      <mat-error *ngIf="error">{{error}}</mat-error>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Введіть Ваш email" type="email" formControlName="email">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Пароль</mat-label>
+        <input matInput placeholder="Введіть Ваш пароль" type="password" formControlName="password">
+      </mat-form-field>
+      <button [disabled]="signupForm.invalid" mat-raised-button color="primary" type="submit">Створити аккаунт</button>
+    </form>
+  </div>
+</div>

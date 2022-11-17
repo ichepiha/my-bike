@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.signup {
+  width: 320px;
+  padding: 1.5rem;
+}
+
+::ng-deep {
+  .signup {
+    .mat-form-field {
+      display: block;
+    }
+  }
+}

@@ -10,4 +10,20 @@
   &__title {
     font-weight: 500;
   }
+
+  &__form {
+    &-item {
+      &:not(.my-info__form-item_radio) {
+        margin: 0;
+      }
+
+      label {
+        margin-right: 1rem;
+      }
+
+      mat-radio-button {
+        margin-right: .5rem;
+      }
+    }
+  }
 }

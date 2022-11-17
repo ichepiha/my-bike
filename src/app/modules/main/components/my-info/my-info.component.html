@@ -3,6 +3,44 @@
   <div *ngIf="userForm" class="my-info__form-wrap">
     <form [formGroup]="userForm" class="my-info__form">
       {{userForm.value | json}}
+      <p class="my-info__form-item">
+        <mat-form-field appearance="outline">
+          <mat-label>Ваше ім'я</mat-label>
+          <input matInput placeholder="Введіть ім'я" formControlName="displayName" type="text">
+        </mat-form-field>
+      </p>
+      <p class="my-info__form-item">
+        <mat-form-field appearance="outline">
+          <mat-label>Ваш вік</mat-label>
+          <input matInput placeholder="Введіть ваш вік" formControlName="age" type="number">
+        </mat-form-field>
+      </p>
+      <p class="my-info__form-item my-info__form-item_radio">
+        <label>Якої ви статі</label>
+        <mat-radio-group formControlName="sex">
+          <mat-radio-button value="male">Чоловік</mat-radio-button>
+          <mat-radio-button value="female">Жінка</mat-radio-button>
+        </mat-radio-group>
+      </p>
+      <p class="my-info__form-item">
+        <mat-form-field appearance="outline">
+          <mat-label>З якої ви країни</mat-label>
+          <input matInput placeholder="Введіть країну" formControlName="country" type="text">
+        </mat-form-field>
+      </p>
+      <p class="my-info__form-item">
+        <mat-form-field appearance="outline">
+          <mat-label>З якого ви міста</mat-label>
+          <input matInput placeholder="Введіть місто" formControlName="city" type="text">
+        </mat-form-field>
+      </p>
+      <p class="my-info__form-item">
+        <mat-form-field appearance="outline">
+          <mat-label>Як довго ви катаєтесь</mat-label>
+          <input matInput placeholder="Введіть ваш досвід" formControlName="experience" type="text">
+          <mat-hint>Наприклад, 1 рік, 5 місяців...</mat-hint>
+        </mat-form-field>
+      </p>
     </form>
   </div>
 </div>

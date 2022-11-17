@@ -12,6 +12,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatMenuModule } from "@angular/material/menu";
 import { ConfirmModalComponent } from './modals/confirm-modal/confirm-modal.component';
 import { MatDialogModule } from "@angular/material/dialog";
+import { MatRadioModule } from "@angular/material/radio";
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { MatDialogModule } from "@angular/material/dialog";
     MatInputModule,
     MatSnackBarModule,
     MatMenuModule,
-    MatDialogModule
+    MatDialogModule,
+    MatRadioModule
   ],
   providers: [],
   exports: [
@@ -37,7 +39,8 @@ import { MatDialogModule } from "@angular/material/dialog";
     MatInputModule,
     MatSnackBarModule,
     MatMenuModule,
-    MatDialogModule
+    MatDialogModule,
+    MatRadioModule
   ],
   declarations: [
     ConfirmModalComponent

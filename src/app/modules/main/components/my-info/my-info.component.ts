@@ -21,6 +21,7 @@ export class MyInfoComponent extends AppDestroy {
 
   createUserForm(): void {
     this.userForm = this._fb.group({
+      uid: [''],
       displayName: [''],
       city: [''],
       country: [''],

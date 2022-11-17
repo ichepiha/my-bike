@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { AuthService } from "../../../../services/auth.service";
+import { AuthService } from "../../services/auth.service";
 import { MatDialog } from "@angular/material/dialog";
-import { ConfirmModalComponent } from "../../../../shared/modals/confirm-modal/confirm-modal.component";
+import { ConfirmModalComponent } from "../../shared/modals/confirm-modal/confirm-modal.component";
 import { filter, takeUntil } from "rxjs";
 import { AngularFireAuth } from "@angular/fire/compat/auth";
-import { AppDestroy } from "../../../../shared/AppDestroy";
+import { AppDestroy } from "../../shared/AppDestroy";
 
 @Component({
   selector: 'app-header',

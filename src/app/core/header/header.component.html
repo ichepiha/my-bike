@@ -15,6 +15,6 @@
 </mat-toolbar>
 
 <mat-menu #userMenu="matMenu" xPosition="before">
-  <button mat-menu-item>Мої дані</button>
+  <a [routerLink]="['/main/my-info']" mat-menu-item>Мої дані</a>
   <button mat-menu-item (click)="signOut()">Вийти</button>
 </mat-menu>

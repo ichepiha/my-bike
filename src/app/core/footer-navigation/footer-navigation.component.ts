@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IFooterLinks } from "../../../../shared/models";
+import { IFooterLinks } from "../../shared/models";
 
 @Component({
   selector: 'app-footer-navigation',

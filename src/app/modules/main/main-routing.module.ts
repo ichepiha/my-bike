@@ -1,9 +1,15 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { MainComponent } from "./components/main/main.component";
+import { MainComponent } from "./page/main/main.component";
+import { MyInfoComponent } from "./components/my-info/my-info.component";
 
 const routes: Routes = [
-  {path: '', component: MainComponent}
+  {
+    path: '', component: MainComponent, children: [
+      {path: 'my-info', component: MyInfoComponent}
+    ]
+  },
+
 ];
 
 @NgModule({

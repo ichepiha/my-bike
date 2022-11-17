@@ -1,0 +1,8 @@
+<div class="my-info mat-elevation-z8">
+  <h1 class="my-info__title">Особисті дані</h1>
+  <div *ngIf="userForm" class="my-info__form-wrap">
+    <form [formGroup]="userForm" class="my-info__form">
+      {{userForm.value | json}}
+    </form>
+  </div>
+</div>

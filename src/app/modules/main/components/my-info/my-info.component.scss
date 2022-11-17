@@ -1,0 +1,13 @@
+:host {
+  flex: 1;
+}
+
+.my-info {
+  max-width: 640px;
+  margin: 2rem auto 0;
+  padding: 2rem;
+
+  &__title {
+    font-weight: 500;
+  }
+}
